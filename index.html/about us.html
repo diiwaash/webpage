@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留学先</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="path/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.jpeg" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times-circle-o" onclick="hideMenu()"></i>
+            <ul>
+                 <li><a href="index.html">Home</a></li>
+                <li><a href="about%20us.html">About</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+  <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+   <h1>About Us</h1>
+
+
+</section>
+
+<!----about us content---->
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1> Why study in Japan</h1>
+    <p>With over 150,000 international students, Japan is one of the most popular destinations for international students.
+        Japan is also famous for the standard of the education system. The OECD ranks Japanese high school students number one in the world for maths, and number 2 for scientific literacy. Japan has the highest number of Nobel prize winners of any Asian country, and the second highest of any country since 2000.49% of Japanese High School graduates enter university.</p>
+        <a href="course.html" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+
+<div class="about-col">
+    <img src="images/about.jpeg">
+</div>
+    </div>
+
+</section>
+
+<!-----Footer------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Contact us for anything about studying in Japan</p>
+    <div class="icon">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made by <i class="fa fa-shekel"></i><i class="fa fa-scribd"></i></p>
+</section>
+
+
+
+<!-------JavaScript for Toggle Menu----->
+<script>
+ var navLinks=document.getElementById("navLinks");
+function  showMenu(){
+     navLinks.style.right="0";
+}
+     function  hideMenu(){
+     navLinks.style.right="-200px";
+}
+</script>
+</body>
+</html>

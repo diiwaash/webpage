@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留学先</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="path/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.jpeg" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times-circle-o" onclick="hideMenu"></i>
+            <ul>
+                  <li><a href="index.html">Home</a></li>
+                <li><a href="about%20us.html">About</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+  <i class="fa fa-bars" onclick="showMenu"></i>
+    </nav>
+   <h1>Why Japan?</h1>
+
+
+</section>
+
+<!----Why Japan---->
+<section class="Course">
+<h1>日本の魅力点</h1>
+    <p>私にとっての日本の最も魅力的なところ</p>
+
+    <div class="row">
+      <div class="course-col">
+          <h3>時を超える文化</h3>
+          <p>日本の魅力の中心には、時間の試練を受けた文化があります。<br></br>訪れる人々は茶道の芸術に浸り、京都での芸者のパフォーマンスの美しさを目にし、<br></br>何世紀もの歴史の証人となってきた古代の寺社を探索することができます。</p>
+      </div>
+         <div class="course-col">
+          <h3>自然の驚異:</h3>
+          <p>日本の多様な風景は、自然の驚異の宝庫です。<br></br>富士山の雪化粧したピークから嵐山の竹の森のみどりまで、この国の風景は多様で息をのむ美しさがあります。</p>
+      </div>
+        <div class="course-col">
+          <h3>おもてなしの心</h3>
+          <p>日本人は比類のないおもてなしとエチケットへの揺るぎないこだわりで知られています。<br>日本人の温かく敬意を持った態度は旅行体験の不可欠な部分です。</p>
+      </div>
+    </div>
+
+</section>
+
+
+<!------facilities----->
+<section class="facilities">
+    <h1>Facilities in Japan</h1>
+    <p>The facilities available in Japan</p>
+ <div class="row">
+     <div class="facilities-col">
+     <img src="images/health.jpeg" alt="">
+     <h3>World Class Healthcare System</h3>
+   <p>Japan has one of the best healthcare system in the world and because of the insurance system in Japan, the healthcare is very cheap></p>
+     </div>
+     <div class="facilities-col">
+     <img src="images/sushi.jpg" alt="">
+     <h3>The Japanese food tastes better in Japan</h3>
+   <p>One of the things Japan is famous for is the large variety of food and each very tasty in their own way.</p>
+     </div>
+     <div class="facilities-col">
+     <img src="images/job.jpeg" alt="">
+     <h3>Job opportunities</h3>
+   <p>Because Japan has a low number of working age group population, there are a lot of job opportunities in Japan, which is great for people thinking of going abroad for work.</p>
+     </div>
+     </div>
+</section>
+
+<!----MY experience in Japan---->
+
+<section class="experience">
+        <h1>My Experience in Japan</h1>
+        <p>Glimpses of my experience as a foreign student.</p>
+        <div class="slider">
+            <div class="slides">
+
+                <input type="radio" name="radio-btn" id="radio1">
+                 <input type="radio" name="radio-btn" id="radio2">
+                 <input type="radio" name="radio-btn" id="radio3">
+                 <input type="radio" name="radio-btn" id="radio4">
+
+                <!---radio buttons end--->
+                <!---slide images start--->
+                <div class="slide first">
+                    <img src="images/1.jpg" alt="">
+                     </div>
+                <div class="slide">
+                    <img src="images/2.JPG" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/4.jpg" alt="">
+                </div>
+                
+                <!-----slide images end--->
+                <!----automatic navigation start--->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+
+                </div>
+                <!----automatic navigation end--->
+            </div>
+            <!----manual navigation start---->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                 <label for="radio2" class="manual-btn"></label>
+                 <label for="radio3" class="manual-btn"></label>
+                 <label for="radio4" class="manual-btn"></label>
+
+            </div>
+            <!----manual navigation end---->
+        </div>
+    <!---image slider end--->
+    </section>
+        
+    
+
+<!-----Footer------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Contact us for anything about studying in Japan</p>
+    <div class="icon">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made by <i class="fa fa-shekel"></i><i class="fa fa-scribd"></i></p>
+</section>
+
+
+
+<!-------JavaScript for Toggle Menu----->
+<script>
+ var navLinks=document.getElementById("navLinks");
+function  showMenu(){
+     navLinks.style.right="0";
+}
+     function  hideMenu(){
+     navLinks.style.right="-200px";
+}
+</script>
+</body>
+</html>
